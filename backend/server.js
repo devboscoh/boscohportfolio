@@ -1,4 +1,3 @@
-// server.js
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
@@ -16,26 +15,22 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());
 
-// Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
 // Connect Database
 connectDB();
 
-// Routes
+// API Routes
 app.use('/api/contact', contactRoutes);
 
-// Static portfolio data (you can also move to MongoDB)
 app.get('/api/profile', (req, res) => {
-  const profileData = {
-    // Your CV data here
+  res.json({
     name: "Boscoh Brilliant Otieno Odoyotieno Odoyo",
     contact: {
       address: "P.O. Box 179-40303",
       phone: "+254715640443",
       email: "boscobrilli8@gmail.com"
     },
-    objective: "An organized, motivated, and adaptable individual seeking to enhance my environment while growing alongside all stakeholders...",
+    objective:
+      "An organized, motivated, and adaptable individual seeking to enhance my environment while growing alongside all stakeholders...",
     skills: [
       "Proficient in MS Word, Excel, PowerPoint, and Internet applications",
       "Full stack web developer, MERN stack tech stack",
@@ -54,8 +49,7 @@ app.get('/api/profile', (req, res) => {
           "Organize cleanups and sensitize the community on waste management",
           "Assist in environmental policy formulation and implementation at the ward level"
         ]
-      },
-      // Add other experiences
+      }
     ],
     education: [
       {
@@ -69,8 +63,16 @@ app.get('/api/profile', (req, res) => {
         period: "January 2012 - September 2015"
       }
     ]
-  };
-  res.json(profileData);
+  });
+});
+
+// Serve frontend (AFTER API routes)
+const frontendPath = path.join(__dirname, '../frontend/dist');
+app.use(express.static(frontendPath));
+
+// React SPA fallback
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
