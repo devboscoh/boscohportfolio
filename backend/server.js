@@ -70,8 +70,8 @@ app.get('/api/profile', (req, res) => {
 const frontendPath = path.join(__dirname, '../frontend/dist');
 app.use(express.static(frontendPath));
 
-// React SPA fallback
-app.get('/.*/', (req, res) => {
+// SPA fallback — Express 5 SAFE (NO wildcards)
+app.use((req, res) => {
   res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
