@@ -7,7 +7,7 @@ const PhotoAlbum = () => {
   const [photos, setPhotos] = useState([
     {
       id: 1,
-      url: 'https://drive.google.com/file/d/16OsHPdWHEDiAmC6SHyYyd4YONz_tAVAT/view?usp=sharing',
+      url: 'frontend/public/images/Tree planting.png',
       title: 'Environmental Conservation',
       description: 'Community tree planting initiative',
       category: 'Environment'
