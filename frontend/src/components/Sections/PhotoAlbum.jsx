@@ -3,11 +3,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, X, Maximize2, Download } from 'lucide-react';
 
 const PhotoAlbum = () => {
-  // Sample photos - replace with your actual photos
+ 
   const [photos, setPhotos] = useState([
     {
       id: 1,
-      url: '../../dist/images/Environmental conservation.jpg',
+      url: '../public/images/Environmental conservation.jpg',
       title: 'Environmental Conservation',
       description: 'Community tree planting initiative',
       category: 'Environment'
