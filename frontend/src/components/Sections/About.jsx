@@ -28,20 +28,27 @@ const About = () => {
         <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
 
           {/* Career Objective - Using the premium card style */}
-          <Card className="lg:col-span-2 card-modern p-8 group">
-            <div className="flex items-start gap-6">
-              <div className="p-3 bg-brand-50 rounded-xl text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors duration-300">
-                <Target size={28} />
+           <Card className="lg:col-span-2 card-modern p-8 group hover:shadow-brand/10 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-start gap-6">
+                <div className="p-3 bg-brand-50 rounded-xl text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors duration-300">
+                  <Target size={28} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">Tech-Driven Environmental Objective</h3>
+                  <p className="text-slate-600 leading-relaxed text-lg">
+                    A technologically advanced professional passionate about applying 
+                    <span className="text-brand-600 font-semibold"> cutting-edge solutions</span> to environmental challenges. 
+                    Seeking opportunities to leverage expertise in 
+                    <span className="text-brand-600 font-semibold"> web applications, GIS, and data analytics</span> 
+                    to develop scalable tools for environmental management and climate action.
+                  </p>
+                  <div className="mt-4 pt-4 border-t border-slate-200">
+                    <p className="text-slate-500 text-sm">
+                      <span className="font-medium text-slate-700">Focus Areas:</span> Geospatial analysis • Environmental monitoring platforms • Sustainable tech solutions • Climate resilience tools
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">Career Objective</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  An organized, motivated, and adaptable individual seeking to enhance my environment
-                  while growing alongside all stakeholders. Looking for a dynamic setting that offers
-                  opportunities for <span className="text-brand-600 font-semibold">real change</span> and professional advancement.
-                </p>
-              </div>
-            </div>
           </Card>
 
           {/* Key Attributes - Using Glassmorphism */}
