@@ -34,7 +34,7 @@ const About = () => {
                   <Target size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">Tech-Driven Environmental Objective</h3>
+                  <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">Career Objective</h3>
                   <p className="text-slate-600 leading-relaxed text-lg">
                     A technologically advanced professional passionate about applying 
                     <span className="text-brand-600 font-semibold"> cutting-edge solutions</span> to environmental challenges. 
