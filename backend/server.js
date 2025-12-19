@@ -77,7 +77,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Catch-all for undefined API routes
-app.all('/api/:path*', (req, res) => {
+app.all(/^\/api\//, (req, res) => {
   res.status(404).json({ error: 'API endpoint not found' });
 });
 
