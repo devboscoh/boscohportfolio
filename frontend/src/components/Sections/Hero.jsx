@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-6">
         <img
-          src="./frontend/public/profile-photo.jpg"
+          src="../frontend/public/profile-photo.jpg"
           alt="Boscoh Brilliant"
           className="w-32 h-32 rounded-full border-4 border-white/30"
         />

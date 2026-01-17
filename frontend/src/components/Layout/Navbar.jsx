@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Projects', href: '#gis-projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#gis-projects' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -32,7 +32,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <a href="#home" className="text-lg font-semibold tracking-wide">
-          Boscoh<span className="opacity-60">.</span>
+          BOSCOH<span className="opacity-60">.</span>
         </a>
 
         {/* Desktop Nav */}
