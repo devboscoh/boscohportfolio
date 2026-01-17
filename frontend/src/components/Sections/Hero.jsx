@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-6">
         <img
-          src="/avatar.jpg"
+          src="/frontend/public/profile-photo.jpg"
           alt="Boscoh Brilliant"
           className="w-32 h-32 rounded-full border-4 border-white/30"
         />
@@ -22,7 +22,7 @@ const Hero = () => {
           Hi, I’m <span className="font-semibold">Boscoh Brilliant</span>
         </h1>
         <p className="uppercase text-sm tracking-[0.3em] opacity-80">
-          Environmental • GIS • Web Developer
+          Environment • GIS • Web Development
         </p>
       </div>
     </section>
