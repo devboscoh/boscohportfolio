@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: <Mail size={20} />, label: "Email", value: "boscobrilli8@gmail.com", href: "mailto:boscobrilli8@gmail.com" },
+    { icon: <Mail size={20} />, label: "Email", value: "dev.boscoh@gmail.com", href: "mailto:dev.boscoh@gmail.com" },
     { icon: <Phone size={20} />, label: "Phone", value: "+254 715 640 443", href: "tel:+254715640443" },
     { icon: <MapPin size={20} />, label: "Location", value: "Nairobi, Kenya", href: "#" }
   ];

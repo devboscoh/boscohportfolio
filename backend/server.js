@@ -33,7 +33,7 @@ app.get('/api/profile', (req, res) => {
     contact: {
       address: "P.O. Box 179-40303",
       phone: "+254715640443",
-      email: "boscobrilli8@gmail.com"
+      email: "dev.boscoh@gmail.com"
     },
     objective: "An organized, motivated, and adaptable individual seeking to enhance my environment while growing alongside all stakeholders...",
     skills: [

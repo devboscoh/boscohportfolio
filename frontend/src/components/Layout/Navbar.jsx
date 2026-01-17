@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation
           <div className="hidden md:flex items-center gap-2">
             <div className="flex bg-slate-100/50 p-1.5 rounded-2xl border border-slate-200/50 backdrop-blur-sm">
               {navItems.map((item) => (
@@ -68,7 +68,7 @@ const Navbar = () => {
             >
               Hire Me <ArrowRight size={16} />
             </a>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button

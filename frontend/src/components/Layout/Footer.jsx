@@ -16,9 +16,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Mail size={20} />, label: 'Email', href: 'mailto:boscobrilli8@gmail.com' },
-    { icon: <Github size={20} />, label: 'GitHub', href: 'https://github.com/Boscoh722' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', href: '#' }, // Add your LinkedIn
+    { icon: <Mail size={20} />, label: 'Email', href: 'mailto:dev.boscoh@gmail.com' },
+    { icon: <Github size={20} />, label: 'GitHub', href: 'https://github.com/devboscoh' },
+  
   ];
 
   return (
